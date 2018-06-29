@@ -44,7 +44,7 @@
 	
 
 	$page_num = mysqli_num_rows($send_it2); #总条数
-	$page_last = $page_num/$pagesize;
+	$page_last = ceil($page_num/$pagesize);
 	if($next>=$page_last)$next = $page_last;
 	?>
 	
